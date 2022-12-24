@@ -1,0 +1,81 @@
+{
+  "name": "konfor",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "~v14.x"
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  },
+  "dependencies": {
+    "@craco/craco": "^6.4.0",
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
+    "axios": "^0.24.0",
+    "chart.js": "^3.7.1",
+    "gh-pages": "^3.2.3",
+    "lodash": "^4.17.21",
+    "node-sass": "^4.0.1",
+    "react": "^17.0.2",
+    "react-barcode": "^1.4.1",
+    "react-chartjs-2": "^4.0.1",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.0",
+    "react-scripts": "4.0.3",
+    "react-select": "^5.2.2",
+    "react-to-print": "^2.14.3",
+    "react-toastify": "^8.1.0",
+    "redux": "^4.1.2",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.0",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "src/**/*.js?(x)"
+        ],
+        "globals": {
+          "_": "readonly",
+          "React": "readonly"
+        },
+        "rules": {
+          "react/jsx-no-undef": "off",
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  }
+}

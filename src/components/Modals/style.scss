@@ -1,0 +1,41 @@
+.product-table {
+  tr {
+    @apply border-b border-black;
+  }
+  th,
+  td {
+    @apply px-10 text-center py-4 text-gray-500 border-r-2;
+  }
+}
+
+.productsAdd::-webkit-scrollbar {
+  display: none;
+}
+
+.productsAdd {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.css-b62m3t-container {
+  width: 700px !important;
+}
+
+.css-6j8wv5-Input {
+  padding: 8px !important;
+}
+
+.invoice-table {
+  th,
+  .invoice-total,
+  table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+  }
+}
+
+.ticket {
+  width: 80mm;
+  max-width: auto;
+}
