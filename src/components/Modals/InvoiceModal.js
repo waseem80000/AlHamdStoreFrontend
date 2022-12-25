@@ -21,7 +21,7 @@ const InvoiceModal = ({ isOpen, setIsOpen, invoiceData }) => {
           </Dialog.Title>
           <div className='h-50v overflow-y-auto main'>
             <div className='ticket bg-white border-2 border-dotted text-sm' ref={invoiceRef}>
-              <h1 className='text-center font-extrabold text-3xl mt-2'>Konfor</h1>
+              <h1 className='text-center font-extrabold text-xl mt-2'>Al Hamd Kiryana Store</h1>
               <div className='flex px-3 my-2'>
                 <div>
                   <div>
