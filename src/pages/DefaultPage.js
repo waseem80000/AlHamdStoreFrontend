@@ -101,7 +101,7 @@ function App() {
         {routes.map((route, index) => (
           <Route path={route.path} exact={route.exact} key={index} element={<route.component />} />
         ))}
-        <Route path='/Login' element={<LoginPage />} />
+        <Route path='/login' element={<LoginPage />} />
       </Routes>
     </Router>
   );
